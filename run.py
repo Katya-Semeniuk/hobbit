@@ -8,6 +8,7 @@ if os.path.exists("env.py"):
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
 
+print(app.secret_key)
 
 @app.route("/")
 def index():
